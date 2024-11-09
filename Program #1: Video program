@@ -1,0 +1,18 @@
+class Student:
+    def check_pass_fail(self):
+        if self.marks >= 60:
+            return True
+        else:
+            return False
+
+student1 = Student()
+student1.name = "Sam"
+student1.marks = 87
+did_pass = student1.check_pass_fail()
+print(f"{student1.name} passed:", did_pass)
+
+student2 = Student()
+student2.name = "Emily"
+student2.marks = 46
+did_pass = student2.check_pass_fail()
+print(f"{student2.name} passed:", did_pass)

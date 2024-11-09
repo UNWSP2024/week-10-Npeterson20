@@ -1,0 +1,14 @@
+Start
+Define Employee Class
+Define __init__ method with name, ID number, department, and job title.
+Define methods (if necessary) for accessing or modifying attributes.
+End
+Mainline Flowchart
+Start
+Create Employee Objects
+Initialize Employee object for Susan Meyers.
+Initialize Employee object for Mark Jones.
+Initialize Employee object for Joy Rogers.
+Display Employee Information
+Print each employee’s data (name, ID, department, job title).
+End
