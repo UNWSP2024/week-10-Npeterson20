@@ -1,0 +1,27 @@
+class Car:
+    def __init__(self, year_model, make):
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0
+
+    def accelerate(self):
+        self.__speed += 5
+
+    def brake(self):
+        self.__speed = max(0, self.__speed - 5)  # Prevents negative speed
+
+    def get_speed(self):
+        return self.__speed
+
+# Creating a Car object
+my_car = Car(2022, "Toyota")
+
+# Accelerate 5 times and display the speed each time
+for _ in range(5):
+    my_car.accelerate()
+    print("Current speed after accelerating:", my_car.get_speed())
+
+# Brake 5 times and display the speed each time
+for _ in range(5):
+    my_car.brake()
+    print("Current speed after braking:", my_car.get_speed())
